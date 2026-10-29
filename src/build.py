@@ -22,6 +22,21 @@ WEB = {
     "impressions · CTR 4.4% · avg. position 7.5": "lượt hiển thị · CTR 4,4% · vị trí TB 7,5",
     "Simple English · 2025 KPI": "Simple English · KPI 2025",
     "& speaking": "& diễn giả",
+    "KOL/KOC": "KOL/KOC", "KOL / KOC": "KOL / KOC", "campaigns": "chiến dịch",
+    "Sample videos from KOL and KOC bookings I arranged for the education brands I worked on: teachers, students and alumni sharing their own stories on TikTok and Facebook.":
+      "Một số video từ các đợt booking KOL, KOC Hạnh phụ trách cho các thương hiệu giáo dục: giáo viên, học viên và cựu học viên chia sẻ câu chuyện của chính họ trên TikTok và Facebook.",
+    "Total views across these 8 videos": "Tổng lượt xem của 8 video này",
+    "Views on the top-performing video": "Lượt xem của video cao nhất",
+    "KOCs in the network I managed": "KOC trong mạng lưới Hạnh quản lý",
+    "224.5K views": "224,5K lượt xem",
+    "126.8K views": "126,8K lượt xem",
+    "25.8K views": "25,8K lượt xem",
+    "6,386 views": "6.386 lượt xem",
+    "3.8K views": "3,8K lượt xem",
+    "1.7K views": "1,7K lượt xem",
+    "1.6K views": "1,6K lượt xem",
+    "1,071 views": "1.071 lượt xem",
+    "21 · Contact": "21 · Liên hệ", "224.5K": "224,5K",
 }
 # Headings written as one line on the web (the PDF split them over <br>).
 WEB.update({
@@ -59,6 +74,7 @@ body = re.sub(r"<!--LANG-->.*?<!--/LANG-->", '<!--LANG--><a href="index.html">EN
 body = body.replace("files/CV_Tran-Thi-Kieu-Hanh_EN.pdf", "files/CV_Tran-Thi-Kieu-Hanh_VI.pdf").replace("files/Portfolio_Tran-Thi-Kieu-Hanh_EN.pdf", "files/Portfolio_Tran-Thi-Kieu-Hanh_VI.pdf")
 body = body.replace("<h2>SEO cho <span class=\"b\">YMYL</span> thương hiệu</h2>", "<h2>SEO cho thương hiệu <span class=\"b\">YMYL</span></h2>")
 body = body.replace("<h2>Giới thiệu <span class=\"b\">thiệu</span></h2>", "<h2>Giới <span class=\"b\">thiệu</span></h2>")
+body = body.replace("<h2>KOL / KOC <span class=\"b\">chiến dịch</span></h2>", "<h2>Chiến dịch <span class=\"b\">KOL / KOC</span></h2>")
 (SITE / "vi.html").write_text(head + "<body>" + body, encoding="utf-8")
 
 skip = re.compile(r"^(#|[\d.,+~%–·KM -]+$|TNEX$|ACB$|UNICEF$)")
