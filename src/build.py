@@ -37,6 +37,11 @@ WEB = {
     "1.6K views": "1,6K lượt xem",
     "1,071 views": "1.071 lượt xem",
     "21 · Contact": "21 · Liên hệ", "224.5K": "224,5K",
+    "Ads": "Ads",
+    "22 · Contact": "22 · Liên hệ",
+    "Meta Ads Manager · 17 campaigns, 19,251,327đ total spend": "Meta Ads Manager · 17 chiến dịch, tổng chi tiêu 19.251.327đ",
+    "Fanpage views · 1 Jul – 29 Oct 2026": "Lượt xem fanpage · 1/7 – 29/10/2026",
+    "Messaging overview · 1 Jul – 29 Oct 2026": "Tổng quan tin nhắn · 1/7 – 29/10/2026",
 }
 # Headings written as one line on the web (the PDF split them over <br>).
 WEB.update({
